@@ -7,7 +7,7 @@ mongoose
   .set("strictQuery", false)
   .connect(process.env.MONGO_URL as string, {})
   .then((data) => {
-    console.log("MongoDB connection successful");
+    console.log("MongoDB is successfully conneced");
     const PORT = process.env.PORT || 3003;
     app.listen(PORT, () => {
         console.log(`The server is listening on ${PORT}`);
